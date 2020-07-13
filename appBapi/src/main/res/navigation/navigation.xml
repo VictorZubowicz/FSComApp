@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navigation"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/fragment_main">
+
+    <fragment
+        android:id="@+id/fragment_main"
+        android:name="com.fs.fscomapp.fragments.fragment_main"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_fragment_main_to_fragment_logging"
+            app:destination="@id/fragment_logging" />
+        <action
+            android:id="@+id/action_fragment_main_to_fragment_adm_logging"
+            app:destination="@id/fragment_adm_logging" />
+        <action
+            android:id="@+id/action_fragment_main_to_fragment_puntos"
+            app:destination="@id/fragment_puntos" />
+        <action
+            android:id="@+id/action_fragment_main_to_fragment_dialog2"
+            app:destination="@id/fragment_dialog" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_adm_logging"
+        android:name="com.fs.fscomapp.fragments.fragment_adm_logging"
+        android:label="fragment_adm_logging"
+        tools:layout="@layout/fragment_adm_logging" >
+        <action
+            android:id="@+id/action_fragment_adm_logging_to_fragment_main"
+            app:destination="@id/fragment_main" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_puntos"
+        android:name="com.fs.fscomapp.fragments.fragment_puntos"
+        android:label="fragment_puntos"
+        tools:layout="@layout/fragment_puntos" >
+        <action
+            android:id="@+id/action_fragment_puntos_to_fragment_details_container"
+            app:destination="@id/fragment_details_container" />
+        <action
+            android:id="@+id/action_fragment_puntos_to_fragment_dialog"
+            app:destination="@id/fragment_dialog" />
+        <action
+            android:id="@+id/action_fragment_puntos_to_fragment_edicion_punto"
+            app:destination="@id/fragment_edicion_punto" />
+        <action
+            android:id="@+id/action_fragment_puntos_to_fragment_mod_com"
+            app:destination="@id/fragment_mod_com" />
+        <action
+            android:id="@+id/action_fragment_puntos_to_settingsActivity"
+            app:destination="@id/settingsActivity" />
+        <action
+            android:id="@+id/action_fragment_puntos_to_blueToothActivity"
+            app:destination="@id/blueToothActbvity" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_logging"
+        android:name="com.fs.fscomapp.fragments.fragment_logging"
+        android:label="fragment_logging"
+        tools:layout="@layout/fragment_logging" >
+        <action
+            android:id="@+id/action_fragment_logging_to_fragment_main"
+            app:destination="@id/fragment_main" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_details_container"
+        android:name="com.fs.fscomapp.fragments.fragment_details_container"
+        android:label="fragment_details_container"
+        tools:layout="@layout/fragment_details_container" >
+        <action
+            android:id="@+id/action_fragment_details_container_to_fragment_puntos"
+            app:destination="@id/fragment_puntos" />
+        <action
+            android:id="@+id/action_fragment_details_container_to_fragment_edicion_punto"
+            app:destination="@id/fragment_edicion_punto" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_details_tab1"
+        android:name="com.fs.fscomapp.fragments.fragment_details_tab1"
+        android:label="fragment_details_tab1"
+        tools:layout="@layout/fragment_details_tab1" />
+    <fragment
+        android:id="@+id/fragment_details_tab2"
+        android:name="com.fs.fscomapp.fragments.fragment_details_tab2"
+        android:label="fragment_details_tab2"
+        tools:layout="@layout/fragment_details_tab2" />
+    <fragment
+        android:id="@+id/fragment_details_tab3"
+        android:name="com.fs.fscomapp.fragments.fragment_details_tab3"
+        android:label="fragment_details_tab3"
+        tools:layout="@layout/fragment_details_tab3" />
+    <activity
+        android:id="@+id/splash"
+        android:name="com.fs.fscomapp.Splash"
+        android:label="activity_splash"
+        tools:layout="@layout/activity_splash" />
+    <dialog
+        android:id="@+id/fragment_dialog"
+        android:name="com.fs.fscomapp.dialogs.dialog_fragment"
+        android:label="fragment_dialog"
+        tools:layout="@layout/dialog_fragment" />
+    <fragment
+        android:id="@+id/fragment_edicion_punto"
+        android:name="com.fs.fscomapp.fragments.fragment_edicion_punto"
+        android:label="fragment_edicion_punto"
+        tools:layout="@layout/fragment_edicion_punto" >
+        <action
+            android:id="@+id/action_fragment_edicion_punto_to_fragment_details_container"
+            app:destination="@id/fragment_details_container" />
+        <action
+            android:id="@+id/action_fragment_edicion_punto_to_fragment_puntos"
+            app:destination="@id/fragment_puntos" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_mod_com"
+        android:name="com.fs.fscomapp.fragments.fragment_set_com"
+        android:label="fragment_mod_com"
+        tools:layout="@layout/fragment_set_com">
+        <action
+            android:id="@+id/action_fragment_mod_com_to_fragment_puntos"
+            app:destination="@id/fragment_puntos" />
+    </fragment>
+    <activity
+        android:id="@+id/settingsActivity"
+        android:name="com.fs.fscomapp.SettingsActivity"
+        android:label="SettingsActivity" />
+    <activity
+        android:id="@+id/blueToothActbvity"
+        android:name="com.fs.fscomapp.BlueToothActivity"
+        android:label="activity_blue_tooth"
+        tools:layout="@layout/activity_blue_tooth" />
+</navigation>

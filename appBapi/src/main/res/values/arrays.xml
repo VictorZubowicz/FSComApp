@@ -1,0 +1,22 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="Labels_group_list">
+        <item>Mostrar por Id</item>
+        <item>Mostrar por Grupos</item>
+    </string-array>
+
+    <string-array name="group_list">
+        <item>Id</item>
+        <item>Group</item>
+    </string-array>
+
+    <string-array name="labels_show_all_items">
+        <item>Solo Items Configurados</item>
+        <item>Mostrar Todos</item>
+    </string-array>
+
+    <string-array name="show_all_items">
+        <item>All</item>
+        <item>Sets</item>
+    </string-array>
+</resources>

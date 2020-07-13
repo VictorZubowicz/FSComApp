@@ -1,0 +1,46 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/cardview_dark_background"
+    android:backgroundTintMode="screen">
+
+    <PreferenceCategory app:title="@string/syncro_header">
+
+        <EditTextPreference
+            app:key="signature"
+            app:title="@string/signature_title"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            app:defaultValue="Mostrar por Id"
+            app:entries="@array/Labels_group_list"
+            app:entryValues="@array/group_list"
+            app:key="group"
+            app:title="Agrupar lista"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            app:defaultValue="All"
+            app:entries="@array/labels_show_all_items"
+            app:entryValues="@array/show_all_items"
+            app:key="filter"
+            app:title="Filtrar lista"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/sync_header">
+
+        <SwitchPreferenceCompat
+            app:key="sync"
+            app:title="Sincronizar lista con Firebase" />
+
+        <SwitchPreferenceCompat
+            app:dependency="sync"
+            app:key="sync_auto"
+            app:summaryOff="Solicitar Actualizacion al Iniciar"
+            app:summaryOn="Actualizar Automomaticamente"
+            app:title="Actualizar" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lay_puntos_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/boton_redondo"
+    android:backgroundTint="@android:color/background_dark"
+    android:backgroundTintMode="screen"
+    tools:context=".fragments.fragment_puntos">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fBut_Delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@android:drawable/ic_delete"
+        android:visibility="invisible"
+        app:backgroundTint="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="@+id/recvPuntos"
+        app:layout_constraintEnd_toStartOf="@+id/fBut_Add"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="382dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/boton_redondo"
+        android:backgroundTintMode="screen"
+        android:src="@drawable/termostato"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recvPuntos"
+        app:tintMode="screen" />
+
+    <TextView
+        android:id="@+id/txtv_puntos_temp"
+        android:layout_width="96dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="32dp"
+        android:text="Temp"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/txtv_puntos_demora"
+        android:layout_width="129dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="24dp"
+        android:text="0"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/but_estado" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recvPuntos"
+        android:layout_width="385dp"
+        android:layout_height="478dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTintMode="screen"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fBut_Add"
+        android:layout_width="130dp"
+        android:layout_height="55dp"
+        android:clickable="true"
+        android:src="@android:drawable/ic_input_add"
+        android:visibility="invisible"
+        app:backgroundTint="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="@+id/recvPuntos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fBut_Delete" />
+
+    <Button
+        android:id="@+id/but_estado"
+        android:layout_width="102dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/luz_estado_celeste"
+        android:text="OFFLINE"
+        android:textColor="@color/bluedark"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

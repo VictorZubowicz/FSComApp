@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "181834667223",
+    "firebase_url": "https://fscomapp-2a509.firebaseio.com",
+    "project_id": "fscomapp-2a509",
+    "storage_bucket": "fscomapp-2a509.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:181834667223:android:24781e2d8171af07e60c92",
+        "android_client_info": {
+          "package_name": "com.factorysolutions.FsComApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "181834667223-orjkejmht3dufq9pbts9uktbsjcbfloi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwfbe8Krkx4St0xKYMwnYqaCwA2O7HL_o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "181834667223-orjkejmht3dufq9pbts9uktbsjcbfloi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

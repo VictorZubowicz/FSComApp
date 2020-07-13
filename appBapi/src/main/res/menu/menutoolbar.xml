@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_conectar"
+        android:icon="@drawable/ic_phonelink"
+        android:title="add"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_config_com"
+        android:icon="@drawable/ic_address"
+        android:title="Item"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_setup_bluetooth"
+        android:icon="@drawable/ic_bluetooth"
+        android:title="bluetooth"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_preferencias"
+        android:icon="@drawable/ic_settings"
+        android:title="Preferencias"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_upload"
+        android:title="Subir Lista a Firebase" />
+    <item
+        android:id="@+id/action_download"
+        android:title="Bajar Lista desde Firebase" />
+    <item
+        android:id="@+id/action_load_in"
+        android:title="Guardar Lista en Memoria" />
+    <item
+        android:id="@+id/action_close"
+        android:title="Cerrar Programa" />
+
+</menu>

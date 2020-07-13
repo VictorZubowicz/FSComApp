@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameSetPunto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/boton_redondo"
+    tools:context=".fragments.fragment_edicion_punto">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <CheckBox
+        android:id="@+id/chk_bt_RP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:buttonTint="@android:color/holo_orange_light"
+        android:text="RP"
+        android:textColor="@android:color/holo_orange_light"
+        app:layout_constraintBottom_toTopOf="@+id/guideline10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/chk_bt_WR"
+        app:layout_constraintTop_toBottomOf="@+id/switch_set_com_run" />
+
+    <CheckBox
+        android:id="@+id/chk_bt_WR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="@android:color/holo_orange_light"
+        android:text="WR"
+        android:textColor="@android:color/holo_orange_light"
+        app:layout_constraintBottom_toTopOf="@+id/guideline10"
+        app:layout_constraintEnd_toStartOf="@+id/chk_bt_RP"
+        app:layout_constraintStart_toEndOf="@+id/chk_bt_RQ"
+        app:layout_constraintTop_toBottomOf="@+id/switch_set_com_run" />
+
+    <CheckBox
+        android:id="@+id/chk_bt_RQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="@android:color/holo_orange_light"
+        android:text="RQ"
+        android:textColor="@android:color/holo_orange_light"
+        app:layout_constraintBottom_toTopOf="@+id/guideline10"
+        app:layout_constraintEnd_toStartOf="@+id/chk_bt_WR"
+        app:layout_constraintStart_toEndOf="@+id/but_set_com_selectBT"
+        app:layout_constraintTop_toBottomOf="@+id/switch_set_com_run" />
+
+    <CheckBox
+        android:id="@+id/chk_bt_Sim"
+        android:layout_width="70dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="16dp"
+        android:buttonTint="@android:color/white"
+        android:text="Sim"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/chk_bt_RP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/switch_set_com_run"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <Switch
+        android:id="@+id/switch_set_com_run"
+        android:layout_width="100dp"
+        android:layout_height="39dp"
+        android:background="@drawable/boton_redondo"
+        android:checked="false"
+        android:text="HAB"
+        android:textAlignment="center"
+        android:textColor="@color/cardview_light_background"
+        android:thumb="@drawable/oval_thumb"
+        android:track="@drawable/oval_track_green"
+        app:layout_constraintBottom_toTopOf="@+id/chk_bt_WR"
+        app:layout_constraintEnd_toStartOf="@+id/chk_bt_Sim"
+        app:layout_constraintStart_toEndOf="@+id/but_set_com_selectBT"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <Spinner
+        android:id="@+id/spin_set_com_address"
+        android:layout_width="81dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:drawable/progress_horizontal"
+        android:backgroundTint="#E4E471"
+        android:popupBackground="#E4E4A1"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtv_set_com_label3"
+        app:layout_constraintTop_toBottomOf="@+id/edtxt_set_com_bridge" />
+
+
+    <TextView
+        android:id="@+id/txtv_set_com_label5"
+        android:layout_width="168dp"
+        android:layout_height="43dp"
+        android:gravity="center"
+        android:text="Estado"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/chk_bt_RQ"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtv_set_com_estado" />
+
+    <TextView
+        android:id="@+id/txtv_set_com_estado"
+        android:layout_width="96dp"
+        android:layout_height="47dp"
+        android:background="@drawable/luz_estado_celeste"
+        android:gravity="center|center_horizontal"
+        android:text="Offline"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline10"
+        app:layout_constraintEnd_toStartOf="@+id/chk_bt_RQ"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/but_set_com_selectBT" />
+
+    <TextView
+        android:id="@+id/txtv_set_com_label3"
+        android:layout_width="96dp"
+        android:layout_height="47dp"
+        android:text="Address:"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toStartOf="@+id/spin_set_com_address"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtv_set_com_label2"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <EditText
+        android:id="@+id/edtxt_set_com_bridge"
+        android:layout_width="81dp"
+        android:layout_height="50dp"
+
+        android:layout_marginEnd="8dp"
+        android:background="@android:drawable/progress_horizontal"
+        android:backgroundTint="#E4E411"
+        android:backgroundTintMode="screen"
+        android:hint="0"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/spin_set_com_address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtv_set_com_label2"
+        app:layout_constraintTop_toBottomOf="@+id/txtv_set_com_label6" />
+
+
+    <TextView
+        android:id="@+id/txtv_set_com_label2"
+        android:layout_width="96dp"
+        android:layout_height="47dp"
+        android:text="Bridge:"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtv_set_com_label3"
+        app:layout_constraintEnd_toStartOf="@+id/edtxt_set_com_bridge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtv_set_com_label6" />
+
+    <TextView
+        android:id="@+id/txtv_set_com_label6"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:text="Seleccion de Placa:"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+    <Button
+        android:id="@+id/but_set_com_selectBT"
+        android:layout_width="195dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/boton_redondo"
+        android:text="Seleccionar Dispositivo"
+        android:textColor="@android:color/holo_blue_bright"
+        app:layout_constraintBottom_toTopOf="@+id/chk_bt_WR"
+        app:layout_constraintEnd_toStartOf="@+id/switch_set_com_run"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <Button
+        android:id="@+id/but_set_com_cerrar"
+        android:layout_width="100dp"
+        android:layout_height="52dp"
+        android:background="@drawable/boton_redondo"
+        android:text="Cerrar"
+        android:textColor="@android:color/holo_blue_bright"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtv_set_com_label5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="226dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_percent="0.45"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.79616964" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

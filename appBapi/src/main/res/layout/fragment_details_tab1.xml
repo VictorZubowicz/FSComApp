@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayoutConteinerItem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:drawable/screen_background_dark"
+    android:backgroundTintMode="screen"
+    tools:context=".fragments.fragment_details_tab1">
+
+
+        <SeekBar
+            android:id="@+id/seekBar_detail_sp"
+            android:layout_width="350dp"
+            android:layout_height="39dp"
+            android:layout_marginBottom="28dp"
+            android:background="@drawable/boton_redondo"
+            android:max="100"
+            android:progressTint="@android:color/white"
+            android:scrollbarSize="10dp"
+            android:thumbTint="@android:color/white"
+            app:layout_constraintBottom_toTopOf="@+id/divider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtv_valor_item_tab1" />
+
+        <TextView
+            android:id="@+id/txtv_label_group_tab1"
+            android:layout_width="80dp"
+            android:layout_height="38dp"
+            android:text="GRUPO: "
+            android:textAlignment="textEnd"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/txtv_descrip_item_tab1"
+            app:layout_constraintEnd_toStartOf="@+id/txtv_grupo_item_tab1"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/txtv_name_item_tab1" />
+
+        <TextView
+            android:id="@+id/txtv_grupo_item_tab1"
+            android:layout_width="139dp"
+            android:layout_height="38dp"
+            android:text="G"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/txtv_descrip_item_tab1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.666"
+            app:layout_constraintStart_toEndOf="@+id/txtv_label_group_tab1"
+            app:layout_constraintTop_toBottomOf="@+id/txtv_name_item_tab1" />
+
+        <TextView
+            android:id="@+id/txtv_name_item_tab1"
+            android:layout_width="234dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="24dp"
+            android:text="NuevoItem"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/txtv_grupo_item_tab1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.515"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtv_descrip_item_tab1"
+            android:layout_width="359dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="8dp"
+            android:text="Descripcion"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/divider4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtv_label_group_tab1" />
+
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintBottom_toTopOf="@+id/txtv_estado_item_tab1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_valor_tab1" />
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintBottom_toTopOf="@+id/txtv_valor_item_tab1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtv_descrip_item_tab1" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintBottom_toTopOf="@+id/butEnviar_write"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtv_estado_item_tab1" />
+
+        <Button
+            android:id="@+id/butEnviar_write"
+            android:layout_width="141dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/boton_redondo"
+            android:backgroundTintMode="screen"
+            android:fontFamily="casual"
+            android:text="COMANDO"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_ic_Item_tab1"
+            android:layout_width="104dp"
+            android:layout_height="103dp"
+            android:layout_marginStart="24dp"
+            android:backgroundTint="@color/design_default_color_error"
+            android:backgroundTintMode="screen"
+            android:foregroundTintMode="screen"
+            app:layout_constraintBottom_toTopOf="@+id/txtv_descrip_item_tab1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.456"
+            app:srcCompat="@android:drawable/btn_radio" />
+
+
+        <Button
+            android:id="@+id/butCerrar_tab1"
+            android:layout_width="54dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/boton_redondo"
+            android:backgroundTintMode="screen"
+            android:text="X"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtv_label_group_tab"
+            android:layout_width="88dp"
+            android:layout_height="30dp"
+            android:fontFamily="serif"
+            android:text="Valor: "
+            android:textAlignment="textEnd"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/img_valor_tab1"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
+        <TextView
+            android:id="@+id/txtv_valor_item_tab1"
+            android:layout_width="198dp"
+            android:layout_height="36dp"
+            android:fontFamily="casual"
+            android:text="Valor"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/progressBar_tab1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.768"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
+        <TextView
+            android:id="@+id/txtv_label_group_tab2"
+            android:layout_width="94dp"
+            android:layout_height="30dp"
+            android:fontFamily="serif"
+            android:text="Estado:"
+            android:textAlignment="textEnd"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/divider3"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider"
+            app:layout_constraintVertical_bias="0.515" />
+
+        <TextView
+            android:id="@+id/txtv_estado_item_tab1"
+            android:layout_width="200dp"
+            android:layout_height="33dp"
+            android:fontFamily="casual"
+            android:text="normal"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/divider3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.35" />
+
+        <ImageView
+            android:id="@+id/img_valor_tab1"
+            android:layout_width="49dp"
+            android:layout_height="56dp"
+            android:src="@drawable/boton_redondo"
+            app:layout_constraintBottom_toTopOf="@+id/divider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.513"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/txtv_valor_item_tab1"
+            app:srcCompat="@drawable/ic_power" />
+
+        <ProgressBar
+            android:id="@+id/progressBar_tab1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="176dp"
+            android:layout_height="45dp"
+            android:progress="50"
+            app:layout_constraintBottom_toTopOf="@+id/divider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.725"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/txtv_valor_item_tab1" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="669dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

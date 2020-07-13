@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fs.fscomapp.BlueToothActivity">
+
+    <CheckBox
+        android:id="@+id/chk_bluetooth_Sim"
+        android:layout_width="91dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="8dp"
+        android:text="Simular"
+        app:layout_constraintBottom_toTopOf="@+id/chk_bluetooth_RP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/but_bluet_select"
+        app:layout_constraintTop_toBottomOf="@+id/edTxt_bluetoothDevice" />
+
+    <EditText
+        android:id="@+id/edTxt_bluetoothDevice"
+        android:layout_width="310dp"
+        android:layout_height="41dp"
+
+        android:background="@android:drawable/progress_horizontal"
+        android:backgroundTint="#E4E4A1"
+        android:backgroundTintMode="screen"
+        android:hint="No se ha seleccionado"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/but_bluet_select"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/edTxt_bluetooth_dato_send"
+        android:layout_width="323dp"
+        android:layout_height="48dp"
+
+        android:background="@android:drawable/progress_horizontal"
+        android:backgroundTint="#E4E4A1"
+        android:backgroundTintMode="screen"
+        android:hint="dato a enviar"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/edTxt_bluetooth_response"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chk_bluetooth_RQ" />
+
+    <EditText
+        android:id="@+id/edTxt_bluetooth_response"
+        android:layout_width="323dp"
+        android:layout_height="48dp"
+
+        android:layout_marginBottom="33dp"
+        android:background="@android:drawable/progress_horizontal"
+        android:backgroundTint="#E4E4A1"
+        android:backgroundTintMode="screen"
+        android:hint="dato a recibir"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/txtmonitor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edTxt_bluetooth_dato_send" />
+
+    <TextView
+        android:id="@+id/txtmonitor"
+        android:layout_width="90dp"
+        android:layout_height="65dp"
+        android:gravity="fill_vertical|fill_horizontal"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/graph"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edTxt_bluetooth_response" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graph"
+        android:layout_width="352dp"
+        android:layout_height="113dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edTxt_bluetooth_response" />
+
+    <Button
+        android:id="@+id/but_bt_select"
+        android:layout_width="202dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="16dp"
+        android:text="Selecionar"
+        app:layout_constraintBottom_toTopOf="@+id/chk_bluetooth_WR"
+        app:layout_constraintEnd_toStartOf="@+id/chk_bluetooth_Sim"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edTxt_bluetoothDevice" />
+
+    <CheckBox
+        android:id="@+id/chk_bluetooth_RQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RQ"
+        app:layout_constraintBottom_toTopOf="@+id/edTxt_bluetooth_dato_send"
+        app:layout_constraintEnd_toStartOf="@+id/chk_bluetooth_WR"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/but_bluet_select" />
+
+    <CheckBox
+        android:id="@+id/chk_bluetooth_RP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RP"
+        app:layout_constraintBottom_toTopOf="@+id/edTxt_bluetooth_dato_send"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/chk_bluetooth_WR"
+        app:layout_constraintTop_toBottomOf="@+id/but_bluet_select" />
+
+    <CheckBox
+        android:id="@+id/chk_bluetooth_WR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WR"
+        app:layout_constraintBottom_toTopOf="@+id/edTxt_bluetooth_dato_send"
+        app:layout_constraintEnd_toStartOf="@+id/chk_bluetooth_RP"
+        app:layout_constraintStart_toEndOf="@+id/chk_bluetooth_RQ"
+        app:layout_constraintTop_toBottomOf="@+id/but_bluet_select" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="301dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="32dp"
+        android:text="dispositivo"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/edTxt_bluetoothDevice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

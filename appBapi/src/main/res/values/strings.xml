@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">FSCom</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="wellcome"> Bienvenido</string>
+    <string name="logging_user">Ingrese Usuario</string>
+    <string name="logging_new">Crear Nuevo Usuario </string>
+    <string name="logging_hint_name"> Ingrese nombre </string>
+    <string name="logging_hint_phone"> Ingrese numero de telefono </string>
+    <string name="logging_hint_password"> Ingrese password </string>
+    <string name="logging_hint_priority"> Prioridad?  [1=Admin] </string>
+    <string name="logging_msg_validation"> Validacion </string>
+    <string name="txt_but_show_list"> Mostrar ListaCom </string>
+    <string name="txt_adm_log"> Administrar Usuarios </string>
+    <string name="but_Acept"> Aceptar</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="syncro_header">Configuraciones Tabla PuntosCom </string>
+    <string name="sync_header">Actualizacion</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title"> Usuario </string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sincronizar Lista de PuntosCom periodicamente</string>
+    <string name="attachment_table_title">Descargar Lista de PuntosCom</string>
+    <string name="attachment_table_on">Descargar Tabla Automaticamente
+    </string>
+    <string name="attachment_summary_off"> Descargar Lista de Puntos solo por Requerimiento</string>
+</resources>

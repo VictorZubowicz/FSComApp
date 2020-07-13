@@ -1,0 +1,261 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".fragments.fragment_write"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTintMode="screen"
+    android:id="@+id/frameLayout">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/cardview_dark_background"
+        android:backgroundTint="@android:color/transparent"
+        android:backgroundTintMode="screen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/txtv_name_item_write"
+            android:layout_width="234dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="24dp"
+            android:text="NuevoItem"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/txtv_valor_item_write"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.515"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="380dp"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintBottom_toTopOf="@+id/txtv_estado_item_write"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/switch_valor_set_write" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="380dp"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintBottom_toTopOf="@+id/butEnviar_write"
+            app:layout_constraintEnd_toEndOf="@+id/txtv_descrip_item_list_write"
+            app:layout_constraintStart_toStartOf="@+id/txtv_label_estado_write"
+            app:layout_constraintTop_toBottomOf="@+id/switch_estado_set_write" />
+
+
+        <TextView
+            android:id="@+id/txtv_descrip_item_list_write"
+            android:layout_width="384dp"
+            android:layout_height="360dp"
+            android:background="@drawable/boton_redondo"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline6" />
+
+        <Button
+            android:id="@+id/butEnviar_write"
+            android:layout_width="141dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/boton_redondo"
+            android:backgroundTintMode="screen"
+            android:fontFamily="casual"
+            android:text="Enviar ->"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/txtv_descrip_item_list_write"
+            app:layout_constraintEnd_toEndOf="@+id/txtv_descrip_item_list_write"
+            app:layout_constraintHorizontal_bias="0.613"
+            app:layout_constraintStart_toStartOf="@+id/txtv_descrip_item_list_write"
+            app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_ic_Item_write"
+            android:layout_width="117dp"
+            android:layout_height="111dp"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="@color/design_default_color_error"
+            android:backgroundTintMode="screen"
+            android:foregroundTintMode="screen"
+            app:layout_constraintBottom_toTopOf="@+id/guideline6"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/btn_radio" />
+
+
+        <Button
+            android:id="@+id/butCerrar_write"
+            android:layout_width="56dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/boton_redondo"
+            android:backgroundTintMode="screen"
+            android:text="X"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtv_label_valor_write"
+            android:layout_width="88dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="serif"
+            android:text="Valor: "
+            android:textAlignment="textEnd"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/seekBarSet_write"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintStart_toStartOf="@+id/txtv_descrip_item_list_write"
+            app:layout_constraintTop_toTopOf="@+id/txtv_descrip_item_list_write" />
+
+        <TextView
+            android:id="@+id/txtv_valor_set_write"
+            android:layout_width="198dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="casual"
+            android:text="Valor"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/seekBarSet_write"
+            app:layout_constraintEnd_toEndOf="@+id/txtv_descrip_item_list_write"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toTopOf="@+id/txtv_descrip_item_list_write" />
+
+        <TextView
+            android:id="@+id/txtv_valor_item_write"
+            android:layout_width="234dp"
+            android:layout_height="41dp"
+            android:fontFamily="casual"
+            android:text="Valor"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/txtv_name_item_write" />
+
+        <SeekBar
+            android:id="@+id/seekBarSet_write"
+            android:layout_width="216dp"
+            android:layout_height="33dp"
+            android:background="@drawable/boton_redondo"
+            android:max="100"
+            android:progressTint="@android:color/white"
+            android:scrollbarSize="10dp"
+            android:thumbTint="@android:color/white"
+            app:layout_constraintBottom_toTopOf="@+id/txtv_estado_item_write"
+            app:layout_constraintEnd_toEndOf="@+id/txtv_descrip_item_list_write"
+            app:layout_constraintHorizontal_bias="0.238"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/txtv_valor_set_write" />
+
+        <Switch
+            android:id="@+id/switch_valor_set_write"
+            android:layout_width="67dp"
+            android:layout_height="34dp"
+            android:background="@drawable/boton_redondo"
+            android:checked="false"
+            android:thumb="@drawable/oval_thumb"
+            android:track="@drawable/oval_track_green"
+            app:layout_constraintEnd_toEndOf="@+id/txtv_descrip_item_list_write"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/txtv_valor_set_write" />
+
+        <Switch
+            android:id="@+id/switch_estado_set_write"
+            android:layout_width="67dp"
+            android:layout_height="34dp"
+            android:background="@drawable/boton_redondo"
+            android:checked="false"
+            android:thumb="@drawable/oval_thumb"
+            android:track="@drawable/oval_track_yellow"
+            app:layout_constraintBottom_toTopOf="@+id/divider2"
+            app:layout_constraintEnd_toEndOf="@+id/txtv_descrip_item_list_write"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/txtv_estado_item_write" />
+
+        <TextView
+            android:id="@+id/txtv_label_estado_write"
+            android:layout_width="94dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="serif"
+            android:text="Estado:"
+            android:textAlignment="textEnd"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/switch_estado_set_write"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintStart_toStartOf="@+id/txtv_descrip_item_list_write"
+            app:layout_constraintTop_toBottomOf="@+id/seekBarSet_write" />
+
+        <TextView
+            android:id="@+id/txtv_estado_item_write"
+            android:layout_width="200dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="casual"
+            android:text="Estado"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/switch_estado_set_write"
+            app:layout_constraintEnd_toEndOf="@+id/txtv_descrip_item_list_write"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/seekBarSet_write" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.22" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.35" />
+
+        <ImageView
+            android:id="@+id/img_valor_write"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/boton_redondo"
+            app:layout_constraintBottom_toTopOf="@+id/txtv_valor_set_write"
+            app:layout_constraintEnd_toEndOf="@+id/txtv_descrip_item_list_write"
+            app:layout_constraintTop_toTopOf="@+id/txtv_descrip_item_list_write"
+            app:srcCompat="@drawable/ic_power" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

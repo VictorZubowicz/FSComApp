@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayoutConteinerItem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:drawable/screen_background_dark"
+    android:backgroundTintMode="screen"
+    tools:context=".fragments.fragment_details_tab3">
+
+  <TextView
+      android:id="@+id/txt_label_img"
+      android:layout_width="81dp"
+      android:layout_height="79dp"
+      android:layout_marginStart="100dp"
+      android:text="Imagen"
+      android:textColor="@android:color/holo_blue_dark"
+      android:textSize="20sp"
+
+      app:layout_constraintBottom_toTopOf="@+id/txt_name_item3"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/edTxt_descripcion_tab2" />
+
+  <TextView
+      android:id="@+id/txt_name_item3"
+      android:layout_width="100dp"
+      android:layout_height="40dp"
+      android:layout_marginTop="70dp"
+      android:text="TipoDato:"
+      android:textColor="@android:color/holo_blue_dark"
+
+      android:textSize="20sp"
+      app:layout_constraintBottom_toTopOf="@+id/butCerrar_tab1"
+      app:layout_constraintEnd_toStartOf="@+id/sp_TipoDato_item_tab1"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/txt_label_img" />
+
+  <TextView
+      android:id="@+id/txtv_descrip_item_tab1"
+      android:layout_width="350dp"
+      android:layout_height="31dp"
+      android:layout_marginTop="16dp"
+      android:text="DESCRIPCION"
+      android:textColor="@android:color/holo_blue_dark"
+      android:textSize="20sp"
+      app:layout_constraintBottom_toTopOf="@+id/edTxt_descripcion_tab2"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.38"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editText_Nombre_tab3" />
+
+  <TextView
+      android:id="@+id/txtv_nombre_tab2"
+      android:layout_width="350dp"
+      android:layout_height="26dp"
+      android:layout_marginTop="16dp"
+      android:background="@android:color/transparent"
+      android:text="NOMBRE PUNTO"
+      android:textColor="@android:color/holo_blue_dark"
+      android:textSize="20sp"
+      app:layout_constraintBottom_toTopOf="@+id/editText_Nombre_tab3"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.459"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <ImageView
+      android:id="@+id/imageView2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent" />
+
+
+  <ImageView
+      android:id="@+id/imgTipoDatoNew2"
+      android:layout_width="105dp"
+      android:layout_height="87dp"
+      app:layout_constraintBottom_toTopOf="@+id/sp_TipoDato_item_tab1"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/txt_label_img"
+      app:layout_constraintTop_toBottomOf="@+id/edTxt_descripcion_tab2"
+      app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
+
+  <Button
+      android:id="@+id/butCerrar_tab1"
+      android:layout_width="133dp"
+      android:layout_height="64dp"
+      android:background="@drawable/boton_redondo"
+      android:backgroundTintMode="screen"
+      android:text="@string/but_Acept"
+      android:textColor="@android:color/holo_blue_dark"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/txtv_descrip_item_tab1"
+      app:layout_constraintVertical_bias="0.714" />
+
+  <EditText
+      android:id="@+id/editText_Nombre_tab3"
+      android:layout_width="350dp"
+      android:layout_height="52dp"
+      android:background="@android:drawable/progress_indeterminate_horizontal"
+      android:backgroundTint="@android:color/holo_orange_light"
+      android:backgroundTintMode="screen"
+      android:ems="10"
+      android:inputType="textPersonName"
+      android:text="Name"
+      android:textColor="@android:color/holo_blue_dark"
+      android:textSize="24sp"
+      app:layout_constraintBottom_toTopOf="@+id/txtv_descrip_item_tab1"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/txtv_nombre_tab2"
+      app:layout_constraintVertical_bias="0.0" />
+
+  <EditText
+      android:id="@+id/edTxt_descripcion_tab2"
+      android:layout_width="350dp"
+      android:layout_height="52dp"
+      android:background="@android:drawable/progress_indeterminate_horizontal"
+      android:backgroundTint="@android:color/holo_orange_light"
+      android:backgroundTintMode="screen"
+      android:textColor="@android:color/holo_blue_dark"
+      android:textSize="24sp"
+      app:layout_constraintBottom_toTopOf="@+id/imgTipoDatoNew2"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/txtv_descrip_item_tab1" />
+
+
+  <Spinner
+      android:id="@+id/sp_TipoDato_item_tab1"
+      android:layout_width="193dp"
+      android:layout_height="48dp"
+      android:backgroundTintMode="screen"
+      app:layout_constraintBottom_toTopOf="@+id/butCerrar_tab1"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/txt_name_item3"
+      app:layout_constraintTop_toBottomOf="@+id/imgTipoDatoNew2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
